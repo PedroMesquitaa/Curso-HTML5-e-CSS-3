@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: rgb(5, 197, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{ /* Quando o link ja foi visitado */
+    color: darkblue;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+a:active{ /* Qaundo clica */
+    color: yellow;
+}
+
+.especial{
+    background-color: lightblue;
+}
+
+.especial::after{
+    content: '⇐';
+}
+
+.especial::before{
+    content:'⇒';
+}
